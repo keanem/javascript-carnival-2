@@ -83,11 +83,11 @@ function gameOver () {
   if (counter > highScore) {
     highScore = counter
     updateHighScore()
-    alert("Congratulations! Your score of " + counter + " is the new High Score!")
+    alert("Congratulations! " + counter + " is the fresh High Score!")
   } else if (counter < highScore) {
-    alert("You scored " + counter + " which is less than the High Score. Take a hike, pal! (or play again)")
+    alert("Try again!")
   } else {
-    alert("You scored " + counter + " which is equal to the current High Score. But it's not better than it, so....")
+    alert("Close!! But no cigar.")
   }
   resetCounter()
 }
